@@ -12,8 +12,8 @@ const Landing = ({isAuthenticated}) =>{
                 <div className="landing-inner">
                 <h1 className="x-large">CS Student Connector</h1>
                 <p className="lead">
-                    Create a developer profile/portfolio, share posts and get help from
-                    other developers
+                    Create a CS student profile/portfolio, share posts and get help from
+                    other CS students
                 </p>
                 <div className="buttons">
                     <Link to='/register' className='btn btn-primary' >Sign up</Link>

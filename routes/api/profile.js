@@ -40,7 +40,7 @@ router.post('/',[auth, [
             return res.status(400).json({errors: errors.array()});
         }
         const {
-            company,
+            university,
             location,
             website,
             bio,
@@ -56,7 +56,7 @@ router.post('/',[auth, [
         // Build profile object
         const profileFields = {};
         profileFields.user = req.user.id;
-        if(company) profileFields.company = company;
+        if(university) profileFields.university = university;
         if(website) profileFields.website = website;
         if(location) profileFields.location = location;
         if(bio) profileFields.bio = bio;
